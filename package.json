@@ -1,0 +1,26 @@
+{
+  "name": "medisuite",
+  "version": "1.0.0",
+  "description": "HIS",
+  "main": "index.js",
+  "scripts": {
+    "test": "NA"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushilkumarhere/node.git"
+  },
+  "keywords": [
+    "medisuite"
+  ],
+  "author": "Sushil Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sushilkumarhere/node/issues"
+  },
+  "homepage": "https://github.com/sushilkumarhere/node#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
