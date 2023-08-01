@@ -12,7 +12,7 @@ const reqfilter = (req,resp,next)=>{
     {
         resp.send("please provide your age first::")
     }
-    else if(req.query.age < 10)
+    else if(req.query.age > 10)
     {
         resp.send("You can not access this site:")
     }
@@ -32,10 +32,9 @@ app.get('',(req,resp)=>{
 app.get('/about',(req,resp)=>{
     resp.sendFile('${publicpath}/about.html')
 })
-app.get('/profile',(req,resp)=>{
-    const user = { name:'Sushil sharma',email : 'sushilkumar.here@gmail.com'
-
-    }
+app.get('/profile',(req,resp)=>
+{
+    const user = { name:'Sushil sharma',email : 'sushilkumar.here@gmail.com' }
     resp.render('profile',{user});
 })
 
